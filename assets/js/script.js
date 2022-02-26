@@ -16,11 +16,14 @@ $(document).ready(function () {
             alert("Por favor ingresar un numero entre 1 y 732")
             return
         }
-        
+
         $.ajax({
             url: "https://www.superheroapi.com/api.php/4905856019427443/" + valueInput,
             success: function (data) {
                 let nombre = data.name; // Listo
+                /*if (nombre == "null"){
+                    nombre = "No hay datos disponibles"
+                }*/
                 let conexiones = data.connections["group-affiliation"]; // En caso de guiones o caracteres raros usar corchetes-Listo
                 let imagen = data.image.url;
                 let publisher = data.biography.publisher;
