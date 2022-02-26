@@ -1,4 +1,4 @@
-# encuentratuhero
+# Encuentra tu hero
 
 GitHub Page del documento: https://sirglaucus.github.io/encuentratuhero/
 
